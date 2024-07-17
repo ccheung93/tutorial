@@ -24,11 +24,8 @@ class TimeWindow:
         if delta > 23:
           raise ValueError("invalid delta {} should be [0-23] hours".format(delta))
 
-        if delta < 0:
-          raise ValueError("invalid delta {} should be [0-23] hours".format(delta))
-
-        if delta == 0:
-          raise ValueError("invalid delta {} cannot be exactly 0 hours".format(delta))
+        if delta <= 0:
+          raise ValueError("invalid delta {} should be [1-23] hours".format(delta))
 
 
         self.start_time = datetime.strptime(start_time, '%Y-%m-%d %H:%M:%S')
