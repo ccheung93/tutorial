@@ -6,7 +6,7 @@ class TimeWindow:
     def __init__(self, start_time, end_time, delta):
         """ Initialize the window and model times associated with a TIEGCM experiment
         
-        start_time - string '%Y-%m-%d %H:%M:%S' model inital time
+        start_time - string '%Y-%m-%d %H:%M:%S' model initial time
         end_time   - string '%Y-%m-%d %H:%M:%S' model end time
         delta - integer  assimilation window time in hours
         
