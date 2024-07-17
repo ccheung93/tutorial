@@ -2,7 +2,7 @@
 
 def num_vowels(text):
     """Return the number of vowels in string."""
-    vowels = "aeiouy"
+    vowels = "aeiou"
     num = 0
     for v in vowels:
         num += text.lower().count(v)        
